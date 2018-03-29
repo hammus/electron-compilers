@@ -7,21 +7,22 @@
     "doc": "esdoc -c ./esdoc.json",
     "compile": "git clean -xdf lib && babel -d lib/ src/",
     "lint": "eslint src",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "prepare": "npm run compile"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulcbetts/electron-compilers"
+    "url": "https://github.com/hammus/electron-compilers"
   },
   "keywords": [
     "electron"
   ],
-  "author": "Paul Betts <paul@paulbetts.org>",
+  "author": "Liam Whan (forked from Paul Betts <paul@paulbetts.org>)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paulcbetts/electron-compilers/issues"
+    "url": "https://github.com/hammus/electron-compilers/issues"
   },
-  "homepage": "https://github.com/paulcbetts/electron-compilers",
+  "homepage": "https://github.com/hammus/electron-compilers",
   "engines": {
     "node": ">= 5.0"
   },
